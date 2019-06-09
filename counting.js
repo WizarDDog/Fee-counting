@@ -55,7 +55,6 @@ function calUserAmount(input) {
 
 
 function addNewUser(input) {
-    let userAmount = [];
     if (input.type === 'cash_out') {
         if (new Date(input.date) > new Date(weekAgo)) {
             userAmount.push({
@@ -118,8 +117,8 @@ function naturalCashOut(input) {
             roundUpAndLog(num);
             return num;
         }
-    } else if (!userWeekCashOutExceeded(input) && input.operation.amount > 1000) {
-        num = input.operation.amount - 1000;
+    } else if (!cashOutExceededWeekLimit && input.operation.amount > 1000) {
+        num = (input.operation.amount + cashWeekAmount - 1000) * cashOutFee;
         roundUpAndLog(num);
         return num;
     } else {
