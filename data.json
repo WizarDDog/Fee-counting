@@ -1,0 +1,6 @@
+[
+    { "date": "2019-06-04", "user_id": 1, "user_type": "natural", "type": "cash_out", "operation": { "amount": 500.00, "currency": "EUR" } },
+    { "date": "2019-06-04", "user_id": 1, "user_type": "natural", "type": "cash_out", "operation": { "amount": 450.00, "currency": "EUR" } },
+    { "date": "2019-06-04", "user_id": 1, "user_type": "natural", "type": "cash_out", "operation": { "amount": 8234.00, "currency": "EUR" } }
+
+]

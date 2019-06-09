@@ -1,0 +1,15 @@
+{
+  "name": "fee-counting",
+  "version": "1.0.0",
+  "description": "This is app for counting cash-in and cash-out fees",
+  "main": "counting.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
